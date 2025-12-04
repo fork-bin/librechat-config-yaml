@@ -20,22 +20,22 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
-          - '---GOOGLE---'
+          # - '---GOOGLE---'
           - google/gemini-3-pro-preview
           - google/gemini-3-pro-image-preview
-          - '---ANTHROPIC---'
+          # - '---ANTHROPIC---'
           - anthropic/claude-opus-4.5
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-haiku-4.5
-          - '---OPENAI---'
+          # - '---OPENAI---'
           - openai/gpt-5.1
           - openai/gpt-5-image
           - openai/gpt-5.1-chat
           - openai/gpt-5.1-codex
-          - '---DEEPSEEK---'
-          - deepseek/deepseek-v3.2
+          # - '---DEEPSEEK---'
           - deepseek/deepseek-v3.2-speciale
-          - '---MOONSHOTAI---'
+          - deepseek/deepseek-v3.2
+          # - '---MOONSHOTAI---'
           - moonshotai/kimi-k2-thinking
         fetch: false
       dropParams:
