@@ -46,7 +46,10 @@ endpoints:
       summaryModel: "x-ai/grok-4.1-fast"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
-
+      addParams:
+        reasoning:
+          effort: "high"
+  
     # xAI
     # https://x.ai/api
     - name: "xai"
