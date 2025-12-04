@@ -20,39 +20,23 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
+          - '---GOOGLE---'
+          - google/gemini-3-pro-preview
+          - google/gemini-3-pro-image-preview
           - '---ANTHROPIC---'
-          - anthropic/claude-haiku-4.5
           - anthropic/claude-opus-4.5
           - anthropic/claude-sonnet-4.5
-          - '---DEEPSEEK---'
-          - deepseek/deepseek-v3.2
-          - deepseek/deepseek-v3.2-speciale
-          - '---GOOGLE---'
-          - google/gemini-3-pro-image-preview
-          - google/gemini-3-pro-preview
-          - '---MOONSHOTAI---'
-          - moonshotai/kimi-k2-thinking
-          - '---NOUSRESEARCH---'
-          - nousresearch/deephermes-3-mistral-24b-preview
-          - nousresearch/hermes-2-pro-llama-3-8b
-          - nousresearch/hermes-3-llama-3.1-405b
-          - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/hermes-4-405b
-          - nousresearch/hermes-4-70b
-          - '---NVIDIA---'
-          - nvidia/llama-3.1-nemotron-70b-instruct
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1
-          - nvidia/llama-3.3-nemotron-super-49b-v1.5
-          - nvidia/nemotron-nano-12b-v2-vl
-          - nvidia/nemotron-nano-9b-v2
+          - anthropic/claude-haiku-4.5
           - '---OPENAI---'
           - openai/gpt-5.1
           - openai/gpt-5-image
           - openai/gpt-5.1-chat
           - openai/gpt-5.1-codex
-          - '---X-AI---'
-          - x-ai/grok-4
-          - x-ai/grok-4.1-fast
+          - '---DEEPSEEK---'
+          - deepseek/deepseek-v3.2
+          - deepseek/deepseek-v3.2-speciale
+          - '---MOONSHOTAI---'
+          - moonshotai/kimi-k2-thinking
         fetch: false
       dropParams:
         - "stop"
