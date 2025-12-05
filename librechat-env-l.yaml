@@ -12,6 +12,36 @@ cache: true
 
 endpoints:
   custom:
+    # Requesty.ai
+    - name: "Requesty"
+      apiKey: "${REQUESTY_KEY}"
+      baseURL: "https://router.requesty.ai/v1"
+      models:
+        default:
+          # - '---GOOGLE---'
+          - policy/gemini-pro-latency
+          # - '---ANTHROPIC---'
+          - policy/opus-latency
+          - policy/sonnet-latency
+          - policy/haiku-latency
+          # - '---OPENAI---'
+          - policy/gpt-5.1
+          # - '---SMART---'
+          - smart/task
+        fetch: false
+      dropParams:
+        - "stop"
+      titleConvo: true
+      titleModel: "policy/haiku-latency"
+      summarize: false
+      summaryModel: "policy/haiku-latency"
+      forcePrompt: false
+      modelDisplayLabel: "Requesty"
+      addParams:
+        requesty:
+          auto_cache: true
+        # reasoning_effort: "high"
+
     # OpenRouter.ai
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
@@ -49,7 +79,7 @@ endpoints:
       addParams:
         reasoning:
           effort: "high"
-  
+
     # xAI
     # https://x.ai/api
     - name: "xai"
